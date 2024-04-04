@@ -53,13 +53,7 @@ public_users.get('/', async function (req, res) {
       res.status(500).send('Internal Server Error');
     }
   });
-public_users.get('/',async function (req, res) {
-    try{
-        const response = await axios.get('https://xiaozhen-5000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/');
-        res.send(JSON.stringify(response.data,null,4))
-    } catch (error) {res.status(500)({message:"Error fetching data from API"})}
 
-  });
 
 // Get book details based on ISBN
 // public_users.get('/isbn/:isbn',function (req, res) {
